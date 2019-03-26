@@ -29,26 +29,25 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  PageTitle: "Books"
-  Title: "Title"
-  Memo: "Memo"
-  Author: "Author"
-  Picture: "Picture"
-  EditingBook: "Editing Book"
-  NewBook: "Editing Book"
-  Detail: "Detail"
-  Edit: "Edit"
-  Destroy: "Destroy"
-  Back: "Back"
+ja:
+  PageTitle: "書籍一覧"
+  Title: "題名"
+  Memo: "説明"
+  Author: "著者"
+  Picture: "画像"
+  EditingBook: "書籍を編集する"
+  NewBook: "書籍を登録する"
+  Detail: "詳細"
+  Edit: "編集"
+  Destroy: "削除"
+  Back: "戻る"
   Message:
-    Delete: "Are you sure?"
+    Delete: "削除してもよろしいですか？"
   helpers:
     submit:
-      create: "Create"
-      update: "Update"
-      submit: "Submit"
-
+      create: "登録する"
+      update: "更新する"
+      submit: "保存する"
 
 
 

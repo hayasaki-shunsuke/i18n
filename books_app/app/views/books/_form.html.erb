@@ -12,25 +12,27 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label t(:'Title') %>
     <%= form.text_field :title %>
   </div>
 
   <div class="field">
-    <%= form.label :memo %>
+    <%= form.label t(:'Memo') %>
     <%= form.text_area :memo %>
   </div>
 
   <div class="field">
-      <%= form.label :author %>
+      <%= form.label t(:'Author') %>
       <%= form.text_field :author, id: :book_author %>
   </div>
 
   <div class="field">
-    <%= form.label :picture %>
+    <%= form.label t(:'Picture') %>
     <%= form.file_field :picture, id: :book_picture %>
   </div>
   <div class="actions">
-    <%= form.submit %>
+    <%= form_for @book do |f| %>
+      <%= f.submit %>
+    <% end %>
   </div>
 <% end %>
