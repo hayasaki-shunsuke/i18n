@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  resources :books
+  # config/routes.rb
+  scope "(:locale)" do
+    resources :books
+  end
 end

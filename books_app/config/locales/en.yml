@@ -36,18 +36,22 @@ en:
   Author: "Author"
   Picture: "Picture"
   EditingBook: "Editing Book"
-  NewBook: "Editing Book"
+  NewBook: "New Book"
   Detail: "Detail"
   Edit: "Edit"
   Destroy: "Destroy"
   Back: "Back"
   Message:
-    Delete: "Are you sure?"
+    confirmDelete: "Are you sure?"
+    save: "Book was successfully created."
+    update: "Book was successfully updated."
+    destroy: "Book was successfully destroyed."
   helpers:
     submit:
       create: "Create"
       update: "Update"
       submit: "Submit"
+    
 
 
 

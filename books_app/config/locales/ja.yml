@@ -42,12 +42,16 @@ ja:
   Destroy: "削除"
   Back: "戻る"
   Message:
-    Delete: "削除してもよろしいですか？"
+    confirmDelete: "削除してもよろしいですか？"
+    save: "新規登録しました。"
+    update: "更新しました。"
+    destroy: "削除しました。"
   helpers:
     submit:
       create: "登録する"
       update: "更新する"
       submit: "保存する"
+    
 
 
 

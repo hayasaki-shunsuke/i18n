@@ -26,6 +26,12 @@ Rails Internationalization (I18n) APIに従って、Railsアプリを多言語�
   - index.html.erbの、show.html.erb、edit.html.erb、new.html.erbのテキストを辞書ファイルから取得するように修正
   - リンクの表示を辞書ファイルから取得するように修正
   - 登録ボタン、編集ボタンをactionの種類によって変化するように修正
+  - books_controller.rbのメッセージ（新規作成、更新、削除）を辞書ファイルから取得するように修正
+  - 「localhost:3000/ja/books」でlocaleが変更できるよう修正
 
 # これからやる事
-- localeの値を変更した時にプログラムで判定する処理を追加する
+- kaminariでページング処理
+- deviceを使ってユーザー認証を実装する
+- omniauthを使ってTwitter認証
+- paperclipを使って画像アップロード
+- ActiveStorageで画像をアップロード
