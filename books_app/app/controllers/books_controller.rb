@@ -1,10 +1,14 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
-
   # GET /books
   # GET /books.json
+  #
+
+  # 1ページに表示する書籍数
+  SHOW_PER_PAGE = 5
   def index
-    @books = Book.all
+    @books = Book.page(params[:page]).per(SHOW_PER_PAGE)
+    @items = Book.page(params[:page]).per(SHOW_PER_PAGE)
   end
 
   # GET /books/1
@@ -28,7 +32,7 @@ class BooksController < ApplicationController
 
     respond_to do |format|
       if @book.save
-        format.html { redirect_to @book, notice: I18n.t(:'Message.save') }
+        format.html { redirect_to @book, notice: t(:'.save') }
         format.json { render :show, status: :created, location: @book }
       else
         format.html { render :new }
@@ -42,7 +46,7 @@ class BooksController < ApplicationController
   def update
     respond_to do |format|
       if @book.update(book_params)
-        format.html { redirect_to @book, notice: I18n.t(:'Message.update') }
+        format.html { redirect_to @book, notice: t(:'.update') }
         format.json { render :show, status: :ok, location: @book }
       else
         format.html { render :edit }
@@ -56,7 +60,7 @@ class BooksController < ApplicationController
   def destroy
     @book.destroy
     respond_to do |format|
-      format.html { redirect_to books_url, notice: I18n.t(:'Message.destroy') }
+      format.html { redirect_to books_url, notice: t(:'.destroy') }
       format.json { head :no_content }
     end
   end

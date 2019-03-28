@@ -30,26 +30,46 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  PageTitle: "Books"
-  Title: "Title"
-  Memo: "Memo"
-  Author: "Author"
-  Picture: "Picture"
-  EditingBook: "Editing Book"
-  NewBook: "New Book"
-  Detail: "Detail"
-  Edit: "Edit"
-  Destroy: "Destroy"
-  Back: "Back"
-  Message:
-    confirmDelete: "Are you sure?"
-    save: "Book was successfully created."
-    update: "Book was successfully updated."
-    destroy: "Book was successfully destroyed."
+  books:
+    index:
+      PageTitle: "Books"
+      Title: "Title"
+      Memo: "Memo"
+      Author: "Author"
+      Picture: "Picture"
+      EditingBook: "Editing Book"
+      NewBook: "New Book"
+      Detail: "Detail"
+      Edit: "Edit"
+      Destroy: "Destroy"
+      Back: "Back"
+      confirmDelete: "Are you sure?"
+    form:
+      Title: "Title"
+      Memo: "Memo"
+      Author: "Author"
+      Picture: "Picture"
+    new:
+      NewBook: "New Book"
+      Back: "Back"
+    edit:
+      Detail: "Detail"
+      Back: "Back"
+    show:
+      Title: "Title"
+      Memo: "Memo"
+      Author: "Author"
+      Picture: "Picture"
+      Edit: "Edit"
+      Back: "Back"
+    create:
+      save: "Book was successfully created."
+    update:
+      update: "Book was successfully updated."
+    destroy:
+      destroy: "Book was successfully destroyed."
   helpers:
     submit:
       create: "Create"
       update: "Update"
       submit: "Submit"
-
-

@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= t :PageTitle %></h1>
+<h1><%= t '.PageTitle' %></h1>
 
 <table>
   <thead>
     <tr>
-      <th><%= t :Title %></th>
-      <th><%= t :Memo %></th>
-      <th><%= t :Author %></th>
-      <th><%= t :Picture %></th>
+      <th><%= t '.Title' %></th>
+      <th><%= t '.Memo' %></th>
+      <th><%= t '.Author' %></th>
+      <th><%= t '.Picture' %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,14 +19,15 @@
         <td><%= book.memo %></td>
         <td><%= book.author %></td>
         <td><%= book.picture %></td>
-        <td><%= link_to t(:'Detail'), book %></td>
-        <td><%= link_to t(:'Edit'), edit_book_path(book) %></td>
-        <td><%= link_to t(:'Destroy'), book, method: :delete, data: { confirm: t(:'Message.confirmDelete') } %></td>
+        <td><%= link_to t(:'.Detail'), book %></td>
+        <td><%= link_to t(:'.Edit'), edit_book_path(book) %></td>
+        <td><%= link_to t(:'.Destroy'), book, method: :delete, data: { confirm: t(:'.confirmDelete') } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
+<%= paginate @items %>
 <br>
 
-<%= link_to t(:'NewBook'), new_book_path %>
+<%= link_to t(:'.NewBook'), new_book_path %>
